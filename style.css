@@ -2,36 +2,35 @@ body {
   background-color: #162127;
 }
 
-p {
+p, h2 {
   color: #fff;
 }
 
 img {
   cursor: pointer;
-}
-
-.div-cats {
-  display: flex;
-}
-
-.div-img {
-  display: flex;
-  justify-content: center;
-  height: 600px;
-  margin: 0 30px;
-}
-
-.div-counter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 10px;
-}
-
-.name-cat {
-  font-size: 30px;
+  width: 350px;
 }
 
 .counter {
   font-size: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#all-cats {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-all-cats {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.selected-cat {
+  display: flex;
+  flex-direction: column;
 }
