@@ -10,23 +10,28 @@ img {
   cursor: pointer;
 }
 
+.div-cats {
+  display: flex;
+}
+
 .div-img {
   display: flex;
   justify-content: center;
   height: 600px;
+  margin: 0 30px;
 }
 
 .div-counter {
   display: flex;
   flex-direction: column;
-  margin-left: 80px;
   align-items: center;
+  margin: 0 10px;
 }
 
-.title {
-  font-size: 40px;
+.name-cat {
+  font-size: 30px;
 }
 
 .counter {
-  font-size: 30px;
+  font-size: 20px;
 }

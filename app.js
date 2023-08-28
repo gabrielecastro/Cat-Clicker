@@ -1,15 +1,26 @@
 // inicia contador
-let contador = 0;
+let contadorGarfield = 0;
+let contadorTobias = 0;
 
 // pega a imagem e contador
-const imageCat = document.querySelector('.img-cat');
-const counter = document.querySelector('.counter');
+const imageGarfield = document.getElementById('garfield');
+const imageTobias = document.getElementById('tobias');
+const counterGarfield = document.getElementById('counter-garfield');
+const counterTobias = document.getElementById('counter-tobias');
 
 // função chamada quando a imgem é clicada
-const increaseCounter = () => {
-  contador += 1;
-  counter.textContent = contador;
+const increaseCounter = (cat) => {
+  if (cat === "Garfield") {
+    contadorGarfield += 1;
+    counterGarfield.textContent = contadorGarfield;
+  }
+  if (cat === "Tobias") {
+    contadorTobias += 1;
+    counterTobias.textContent = contadorTobias;
+  }
+  
 }
 
 // Adiciona um ouvinte de evento de clique à imagem
-imageCat.addEventListener('click', increaseCounter);
+imageGarfield.addEventListener('click', () => increaseCounter('Garfield'));
+imageTobias.addEventListener('click', () => increaseCounter('Tobias'));
